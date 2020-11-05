@@ -1,0 +1,6 @@
+export const ADD_COURSE = "ADD_COURSE";
+export const DELETE_COURSE = "DELETE_COURSE";
+export const SET_CURRENT_COURSE = "SET_CURRENT_COURSE";
+export const SET_CURRENT = "CLEAR_CURRENT";
+export const CLEAR_CURRENT = "CLEAR_CURRENT";
+export const UPDATE_COURSE = "UPDATE_COURSE"
