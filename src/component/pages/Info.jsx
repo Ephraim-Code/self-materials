@@ -6,9 +6,10 @@ const Info = () => {
     const courseContext = useContext(CourseContext);
     const { course } = courseContext;
 
+
     return (
         <div>
-
+            <h2>{course.find(x => x.id === course.id)}</h2>
         </div>
     )
 

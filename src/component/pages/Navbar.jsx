@@ -21,7 +21,7 @@ const Navbar = () => {
                     <Link to="/home" className="color_content active  notification" >
                         <span className="badge">
                             {course.length}
-                        </span>Course
+                        </span>{course.length === 1 || course.length === 0 ? "Course" : "Courses"}
 
                     </Link>
                 </li>

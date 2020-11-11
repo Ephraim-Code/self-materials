@@ -1,6 +1,10 @@
 import React from 'react';
 import { Component } from 'react';
 import { FaAdobe, FaHiking, FaJava } from 'react-icons/fa';
+import { FcReading } from 'react-icons/fc';
+import SmallBanner from './SmallBanner';
+import { Link } from "react-router-dom";
+
 import loading from '../../course/loading-arrow.gif'
 import FreeCourse from './FreeCourse';
 import Repo from './Repo';
@@ -21,7 +25,7 @@ class MainPage extends Component {
                 id: 2,
                 name: "Critical Thinking",
                 price: "free",
-                icon: <FaAdobe />,
+                icon: <FcReading />,
                 desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin",
 
             },
@@ -43,10 +47,14 @@ class MainPage extends Component {
                 <div className="services-center">
                     {this.state.freeCourse.map((item, index) => {
                         return <article className="services" key={index}>
-                            <h2>{item.icon}</h2>
-                            <h6>{item.name}</h6>
+                            <h1 style={{ fontSize: "4rem" }}>{item.icon}</h1>
+                            <Link to={'/Info/' + item.id}>
+                                <h6>{item.name}</h6>
+                            </Link>
                             <p>{item.desc}</p>
-                            <span className="free">{item.price}</span>
+                            <Link to={'/Info' + item.id}>
+                                <span className="free" style={{ textDecoration: "none" }}>{item.price}</span>
+                            </Link>
                         </article>
                     })}
 

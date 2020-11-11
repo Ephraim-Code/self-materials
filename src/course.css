@@ -686,6 +686,23 @@ cursor: pointer;
   .services {
     padding: 5rem 0;
   }
+  /* .smallBanner{
+    width: 50%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    padding: 3rem;
+    color: #ffff;
+    top: 30px;
+    left: 30px;
+  } */
+  /* .defaultHero{
+    background: url("./course/images/forest.jpeg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
   .services {
     background: var(--darkGrey);
     text-align: center;
@@ -704,6 +721,7 @@ cursor: pointer;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     grid-row-gap: 2rem;
     grid-column-gap: 50px;
+    text-decoration: none;
   }
   .grid{
     display: flex;

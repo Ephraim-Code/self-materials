@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CourseContext from '../context/CourseContext';
 import { Link } from 'react-router-dom';
 class ShowInfo extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     state = {
         isOpen: false
     }
@@ -13,6 +11,7 @@ class ShowInfo extends React.Component {
         })
     }
     render() {
+
         const Info = this.props.course;
 
         return (
@@ -24,16 +23,14 @@ class ShowInfo extends React.Component {
                     this.state.isOpen ?
                         <p className="info-content">{Info}
                             <br />
-                            <Link to="/Info/:id">
+                            <Link to='/Info/:id' >
                                 <button>Details</button>
 
                             </Link>
                         </p> : null
-
                 }
             </div>
         )
     }
-
 }
 export default ShowInfo;

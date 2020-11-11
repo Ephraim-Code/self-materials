@@ -111,9 +111,6 @@ const CourseForm = () => {
 
                 />
                 <input type="submit" value={current ? "EDIT" : " CREATE COURSE"} className="submit" />
-
-                <Link to="/home">
-                </Link>
                 {current && (
                     <p className="clear" onClick={clearAll} style={{ fontSize: "8px", borderRadius: "15px" }}>clear</p>
                 )}

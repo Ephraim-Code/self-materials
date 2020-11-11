@@ -12,7 +12,7 @@ class Developer extends Component {
     render() {
         return (
             <div>
-                <img src="./course/images/Ephraim.jpg"
+                <img src="./images/Ephraim.jpg"
                     alt="Developer"
                     style={{
                         width: "35px", height:

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaCaretSquareDown, FaFacebook, FaGithub, FaPhone, FaPhoneAlt } from 'react-icons/fa';
+import { FaCaretSquareDown, FaCopyright, FaFacebook, FaGithub, FaPhone, FaPhoneAlt } from 'react-icons/fa';
 class Footer extends Component {
 
     state = {
@@ -20,7 +20,7 @@ class Footer extends Component {
                     <div>
                         <div className="footer_details">
                             <div className="developer">
-                                <img src="./course/images/Ephraim.jpg" alt="Developer" style={{ width: "40px", height: "40px", borderRadius: "50%" }} />
+                                <img src="./images/Ephraim.jpg" alt="Developer" style={{ width: "40px", height: "40px", borderRadius: "50%" }} />
                                 <h5>Ephraim Momoh </h5>
                                 {" "} <p className="more" onClick={this.handelDetail}>
                                     {this.state.detailOpen ? "Contacting" : "Contact"}
@@ -33,7 +33,7 @@ class Footer extends Component {
 
                                     <a href="https://github.com/Ephraim-Code/self-materials" target="_blank"> <FaGithub /> </a>
                                     <a href="https://github.com/Ephraim-Code/self-materials"> <FaFacebook /> </a>
-                                     
+
                                 </div>
 
                             )}
@@ -44,7 +44,7 @@ class Footer extends Component {
 
                 </footer>
                 <p><FaPhoneAlt />  +231-0888214521</p>
-                <span>All Right Reserved 2020</span>
+                <span>All Right Reserved <FaCopyright /> 2020 </span>
 
             </div>
 

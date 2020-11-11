@@ -7,7 +7,6 @@ import ShowInfo from './ShowInfo';
 
 const CourseIterm = ({ course }) => {
 
-    const [isopen, setIsopen] = useState(false);
     const courseContext = useContext(CourseContext);
     const { deleteCourse, setCurrent, clearCurrent } = courseContext;
     const { id, name, price, instructor, icon, info, duration, img } = course;

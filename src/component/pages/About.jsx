@@ -1,6 +1,8 @@
 import React from 'react';
 import Developer from './Developer';
 import { FcCheckmark } from 'react-icons/fc';
+import { FaGithub } from 'react-icons/fa';
+
 
 const About = () => {
     return (
@@ -13,8 +15,8 @@ const About = () => {
             </div>
             <div className="about-article">
                 <h3 className="paragraph">
-                    This  is just  practical react  application for beginners intermediate  level , I created in  just one day ,
-                    It's  can be found on my githud repository.
+                    This  is just  practical react  application for beginners and  intermediate  level , I created  this app to help you get started,
+                    source  code for this application  can be found on my githud repository.
                     This React Application has no Backend functionality, but i promise to add it later
                 </h3>
 
@@ -37,6 +39,7 @@ const About = () => {
                     </li>
 
                 </ul>
+                <a href="https://github.com/Ephraim-Code/self-materials" target="_blank"><h3>Get The Code <FaGithub /></h3>  </a>
             </div>
         </div>
     )
